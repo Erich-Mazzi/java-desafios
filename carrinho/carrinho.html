@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="carrinho.css">
+
+    <script src="carrinho.js" defer></script>
+</head>
+<body>
+    <header>
+        <hr>
+            <h1 class="site-nome"> Senaizon</h1>
+    </header>
+
+    <main class="selecao">
+        <section class="container section-normal">
+            <h2 class="titulo-section"> Hardware</h2>
+
+            <div class="container-produtos">
+                <div class="produto-hardware">
+                    <strong class="produto-titulo">RTX 4090</strong>
+                        <br>
+                    <img src="rtx 4090.jpg" alt="RTX 4090" class="esquerda">
+                    <div class="preco-produto-container">
+                        <span class="preco-produto">R$69,69</span>
+                        <button type="button" class="btn-hover">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section-normal">
+            <h2 class="titulo-section">carrinho</h2>
+
+            <table class="tabela-carrinho">
+                <thead>
+                    <tr>
+                        <th class="header-carrinho coluna1">Item</th>
+                        <th class="header-carrinho coluna2">Preço</th>
+                        <th class="header-carrinho coluna3" >Quantidade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="produto-carrinho">
+                        <td class="ident-carrinho">
+                            <img src="rtx 4090.jpg" alt="RTX 4090" class="img-produto-carrinho">
+                            <strong class="titulo-produto-carrinho">RTX 4090</strong>
+                        </td>
+                        <td>
+                            <span class="preco-produto-carrinho">R$69,69</span>
+                        </td>
+                        <td>
+                            <input type="number" value="2" min="0" class="qtn-produto">
+                            <button type="button" class="btn-remover-produto">Remover</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="carrinho-total-container">
+                            <strong>Total</strong>
+                            <span>R$69,69</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button type="button" class="comprar-btn">Finalizar Compra</button>
+        </section>
+    </main>
+
+</body>
+</html>

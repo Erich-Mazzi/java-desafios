@@ -1,0 +1,136 @@
+:root {
+    --white: #fff;
+    --red: #aa0505;
+    --gray: #959595;
+    --yellow: #ffcd29;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #bebebe;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 75px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    font-size: 45px;
+}
+
+.esquerda{
+    margin-left: 25%;
+    width: 300px;
+    height: 300px;
+}
+
+.produto-titulo{
+    margin-left: 31%;
+}
+
+.preco-produto{
+    margin-left: 27%;
+}
+
+button{
+    background-color: #eb0000;
+    margin-left: 1%;
+}
+
+.img-produto-carrinho{
+    width: 120px;
+    height: 100px;
+    margin-left: 45%;
+}
+
+.tabela-carrinho {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+.header-carrinho {
+    text-align: start;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 6px;
+    text-transform: uppercase;
+  }
+
+  .coluna2,
+  .coluna3 {
+    width: 26%;
+  }
+
+  .ident-carrinho {
+    display: flex;
+    align-items: center;
+  }
+
+  .produto-carrinho td {
+    padding: 8px 0;
+  }
+
+  .titulo-produto-carrinho {
+    margin-left: 16px;
+    font-size: 18px;
+  }
+
+  .qtn-produto {
+    width: 48px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid var(--yellow);
+    text-align: center;
+    background: #eee;
+  }
+  
+  .btn-remover-produto {
+    margin-left: 12px;
+    background: #ff0000;
+    color: var(--white);
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 6px;
+  
+    transition: filter 0.2s;
+  }
+
+  .btn-remover-produto:hover {
+    filter: brightness(0.8);
+  }
+
+  .carrinho-total-container {
+    border-top: 1px solid var(--gray);
+    text-align: end;
+    padding: 6px 16px 0 0;
+    font-size: 18px;
+  }
+
+  .carrinho-total-container strong {
+    margin-right: 12px;
+  }
+
+  .comprar-btn {
+    display: flex;
+    margin: 24px auto 0;
+    background: var(--yellow);
+    color: var(--white);
+    border: 0;
+    border-radius: 6px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+  
+    transition: filter 0.2s;
+  }
+  
+  .comprar-btn:hover {
+    filter: brightness(0.8);
+  }
